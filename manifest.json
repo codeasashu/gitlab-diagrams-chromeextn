@@ -1,0 +1,21 @@
+{
+    "name": "Gitlab drawio integration",
+    "version": "1.0",
+	"description": "Add drawio integration to gitlab issue editor!",
+	"permissions": [
+		"activeTab",
+		"contextMenus"
+	],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"content_scripts": [
+		{
+		  "matches": ["https://gitlab.com/*"],
+		  "css": ["style.css"],
+		  "js": ["micromodal.min.js","contentScript.js"]
+		}
+	],
+	"web_accessible_resources": ["drawio-receiver.js"],
+    "manifest_version": 2
+  }
