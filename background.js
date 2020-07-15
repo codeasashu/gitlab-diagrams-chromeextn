@@ -1,4 +1,3 @@
-// Copyright 2020 MyOperator. All rights reserved.
 'use strict';
 
 chrome.contextMenus.create({
